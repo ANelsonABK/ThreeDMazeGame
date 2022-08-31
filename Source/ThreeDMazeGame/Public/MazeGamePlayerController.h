@@ -52,11 +52,11 @@ protected:
     void RequestSprintStart();
     void RequestSprintEnd();
 
-    //UPROPERTY(EditAnywhere, Category = "HUD")
-    //    TSubclassOf<class UUserWidget> HUDClass;
+    UPROPERTY(EditAnywhere, Category = "HUD")
+        TSubclassOf<class UUserWidget> HUDClass;
 
-    //UPROPERTY()
-    //    UUserWidget* HUDWidget;
+    UPROPERTY()
+        UUserWidget* HUDWidget;
 
     /* TODO: Add widget */
      /** Base lookup rate, in deg/sec. Other scaling may affect final lookup rate. */
@@ -75,8 +75,9 @@ protected:
     /*UPROPERTY()
         AMazeGameStateBase* MazeGameState;
 
+    */
     UPROPERTY()
-        UUserWidget* MazeGameWidget = nullptr;*/
+        UUserWidget* MazeGameWidget = nullptr;
 
     //used to determine flick of axis
     //float LastDelta = 0.0f;
